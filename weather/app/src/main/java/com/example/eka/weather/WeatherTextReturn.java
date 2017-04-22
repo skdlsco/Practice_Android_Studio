@@ -4,9 +4,10 @@ package com.example.eka.weather;
  * Created by eka on 2017. 4. 11..
  */
 
-public class WeatherReturn {
+public class WeatherTextReturn {
 
     public Response response = new Response();
+
     public class Response{
         public Body getBody() {
             return body;
