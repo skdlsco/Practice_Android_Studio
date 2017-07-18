@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<WeatherTemperature> call, Response<WeatherTemperature> response) {
                 switch (response.code()){
                     case 200:
+                        Log.e("asd1f",response.body().toString());
                         weathertem.setText(response.body().getResponse().getBody().getItems().getItem().getTaMax3()+" ~ "+response.body().getResponse().getBody().getItems().getItem().getTaMin3());
                         break;
                     default:
